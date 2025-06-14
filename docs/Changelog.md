@@ -4,6 +4,61 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
+## <a name="3.9.2" />[3.9.2] - 2025-06-10
+
+See full log [of v3.9.1...v3.9.2](https://github.com/microsoft/testfx/compare/v3.9.1...v3.9.2)
+
+### Fixed
+
+* Fix MSTEST0042 (duplicate data row) false positive with Zero/NegativeZero by @Youssef1313 in [#5684](https://github.com/microsoft/testfx/pull/5684)
+* Ensure TestMethodAttribute.Execute is run on the correct execution context by @Youssef1313 in [#5688](https://github.com/microsoft/testfx/pull/5688)
+* Avoid loading System.Threading.Tasks.Extensions when not needed by @Youssef1313 in [#5694](https://github.com/microsoft/testfx/pull/5694)
+* Fix UseAsync property in TestMethodAttribute derived classes to use type checks by @Youssef1313 and @Copilot in [#5708](https://github.com/microsoft/testfx/pull/5708)
+* Fix UnitTestRunner leaking some test class instances by @Youssef1313 in [#5715](https://github.com/microsoft/testfx/pull/5715)
+
+### Artifacts
+
+* MSTest: [3.9.2](https://www.nuget.org/packages/MSTest/3.9.2)
+* MSTest.TestFramework: [3.9.2](https://www.nuget.org/packages/MSTest.TestFramework/3.9.2)
+* MSTest.TestAdapter: [3.9.2](https://www.nuget.org/packages/MSTest.TestAdapter/3.9.2)
+* MSTest.Analyzers: [3.9.2](https://www.nuget.org/packages/MSTest.Analyzers/3.9.2)
+* MSTest.Sdk: [3.9.2](https://www.nuget.org/packages/MSTest.Sdk/3.9.2)
+* Microsoft.Testing.Extensions.CrashDump: [1.7.2](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump/1.7.2)
+* Microsoft.Testing.Extensions.HangDump: [1.7.2](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump/1.7.2)
+* Microsoft.Testing.Extensions.HotReload: [1.7.2](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload/1.7.2)
+* Microsoft.Testing.Extensions.Retry: [1.7.2](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry/1.7.2)
+* Microsoft.Testing.Extensions.TrxReport: [1.7.2](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport/1.7.2)
+* Microsoft.Testing.Extensions.AzureDevOpsReport [1.0.0-alpha.25310.6](https://www.nuget.org/packages/Microsoft.Testing.Extensions.AzureDevOpsReport/1.0.0-alpha.25310.6)
+* MSTest.SourceGeneration: [1.0.0-alpha.25310.6](https://www.nuget.org/packages/MSTest.SourceGeneration/1.0.0-alpha.25310.6)
+* MSTest.Engine: [1.0.0-alpha.25310.6](https://www.nuget.org/packages/MSTest.Engine/1.0.0-alpha.25310.6)
+
+## <a name="3.9.1" />[3.9.1] - 2025-05-27
+
+See full log [of v3.9.0...v3.9.1](https://github.com/microsoft/testfx/compare/v3.9.0...v3.9.1)
+
+### Fixed
+
+* Make ConditionBaseAttribute.Mode public by @Youssef1313 in [#5581](https://github.com/microsoft/testfx/pull/5581)
+* Add missing overload for Assert.Throws by @Youssef1313 in [#5619](https://github.com/microsoft/testfx/pull/5619)
+* Fix System.MissingMethodException for KeyValuePair Deconstruction by @Youssef1313 in [#5633](https://github.com/microsoft/testfx/pull/5633)
+* Run the whole ExecuteInternal logic under the right execution context by @Youssef1313 in [#5636](https://github.com/microsoft/testfx/pull/5636)
+
+### Artifacts
+
+* MSTest: [3.9.1](https://www.nuget.org/packages/MSTest/3.9.1)
+* MSTest.TestFramework: [3.9.1](https://www.nuget.org/packages/MSTest.TestFramework/3.9.1)
+* MSTest.TestAdapter: [3.9.1](https://www.nuget.org/packages/MSTest.TestAdapter/3.9.1)
+* MSTest.Analyzers: [3.9.1](https://www.nuget.org/packages/MSTest.Analyzers/3.9.1)
+* MSTest.Sdk: [3.9.1](https://www.nuget.org/packages/MSTest.Sdk/3.9.1)
+* Microsoft.Testing.Extensions.CrashDump: [1.7.1](https://www.nuget.org/packages/Microsoft.Testing.Extensions.CrashDump/1.7.1)
+* Microsoft.Testing.Extensions.HangDump: [1.7.1](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HangDump/1.7.1)
+* Microsoft.Testing.Extensions.HotReload: [1.7.1](https://www.nuget.org/packages/Microsoft.Testing.Extensions.HotReload/1.7.1)
+* Microsoft.Testing.Extensions.Retry: [1.7.1](https://www.nuget.org/packages/Microsoft.Testing.Extensions.Retry/1.7.1)
+* Microsoft.Testing.Extensions.TrxReport: [1.7.1](https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport/1.7.1)
+* Microsoft.Testing.Extensions.AzureDevOpsReport [1.0.0-alpha.25277.3](https://www.nuget.org/packages/Microsoft.Testing.Extensions.AzureDevOpsReport/1.0.0-alpha.25277.3)
+* MSTest.SourceGeneration: [1.0.0-alpha.25277.3](https://www.nuget.org/packages/MSTest.SourceGeneration/1.0.0-alpha.25277.3)
+* MSTest.Engine: [1.0.0-alpha.25277.3](https://www.nuget.org/packages/MSTest.Engine/1.0.0-alpha.25277.3)
+
 ## <a name="3.9.0" />[3.9.0] - 2025-05-20
 
 See full log [of v3.8.3...v3.9.0](https://github.com/microsoft/testfx/compare/v3.8.3...v3.9.0)
